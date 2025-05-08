@@ -2,9 +2,41 @@
 <html>
 <head>
   <title>Coming Soon</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: url('images/background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 24px;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 12px;
+      display: inline-block;
+    }
+  </style>
 </head>
-<body style="font-family: sans-serif; text-align: center; padding-top: 100px;">
-  <h1>Elephant Panda Holdings</h1>
-  <p>We're building something big.</p>
+<body>
+  <div class="overlay">
+    <h1>Elephant Panda Holdings</h1>
+    <p>We invest in lower middle market Aerospace & Defense companies.</p>
+  </div>
 </body>
 </html>
