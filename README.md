@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @bpephold
+- 👋 Hi, I’m the site for Elephant Panda
 - 👀 I’m interested in Artificial Intelligence / Machine Learning
 
 <!---
