@@ -1,42 +1,336 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Coming Soon</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-      background: url('images/background.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-      text-align: center;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elephant Panda Holdings, LLC</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
 
-    p {
-      font-size: 24px;
-    }
+        /* Background image styling */
+        .background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: url('images/background.jpg'); /* Replace with your actual image path */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: brightness(0.4);
+        }
 
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.3);
-      padding: 40px;
-      border-radius: 12px;
-      display: inline-block;
-    }
-  </style>
+        /* Navigation Bar */
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .logo:hover {
+            color: #4a9eff;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .nav-links a:hover {
+            color: #4a9eff;
+        }
+
+        .nav-links a.active {
+            color: #4a9eff;
+        }
+
+        /* Page Container */
+        .page-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6rem 2rem 2rem;
+        }
+
+        /* Home Page Styles */
+        .hero-content {
+            text-align: center;
+            max-width: 800px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .company-name {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #ffffff 0%, #4a9eff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .tagline {
+            font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, #4a9eff 0%, #1e78ff 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(74, 158, 255, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(74, 158, 255, 0.4);
+        }
+
+        /* About and Contact Page Styles */
+        .content-section {
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            padding: 3rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .content-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            background: linear-gradient(135deg, #ffffff 0%, #4a9eff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .content-section p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 1.5rem;
+        }
+
+        .content-section h2 {
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #4a9eff;
+        }
+
+        .contact-info {
+            margin-top: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-item strong {
+            color: #4a9eff;
+            margin-right: 0.5rem;
+        }
+
+        /* Hide pages by default */
+        .page {
+            display: none;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        /* Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 0 1rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+            }
+
+            .content-section {
+                padding: 2rem;
+            }
+
+            .company-name {
+                font-size: 2rem;
+            }
+
+            .tagline {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="overlay">
-    <h1>Elephant Panda Holdings, LLC</h1>
-    <p>We invest in lower middle market Aerospace & Defense companies.</p>
-  </div>
+    <!-- Background Container -->
+    <div class="background-container"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo" onclick="showPage('home')">Elephant Panda Holdings</a>
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link active" data-page="home" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" class="nav-link" data-page="about" onclick="showPage('about')">About</a></li>
+                <li><a href="#" class="nav-link" data-page="contact" onclick="showPage('contact')">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home" class="page active">
+        <div class="page-container">
+            <div class="hero-content">
+                <h1 class="company-name">Elephant Panda Holdings, LLC</h1>
+                <p class="tagline">We invest in lower middle market Aerospace & Defense companies.</p>
+                <a href="#" class="cta-button" onclick="showPage('about')">Learn More About Us</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Page -->
+    <div id="about" class="page">
+        <div class="page-container">
+            <div class="content-section">
+                <h1>About Us</h1>
+                <p>Elephant Panda Holdings, LLC is a specialized investment firm focused on the lower middle market aerospace and defense sector. We combine strategic vision with operational expertise to help our portfolio companies reach their full potential.</p>
+                
+                <h2>Our Mission</h2>
+                <p>We partner with exceptional aerospace and defense companies, providing not just capital but also strategic guidance and operational support. Our goal is to accelerate growth while maintaining the entrepreneurial spirit that makes these businesses successful.</p>
+                
+                <h2>Investment Focus</h2>
+                <p>We target lower middle market companies in the aerospace and defense industry with strong fundamentals and significant growth potential. Our typical investment ranges from $10 million to $50 million, focusing on companies that can benefit from our industry expertise and strategic partnerships.</p>
+                
+                <h2>Why Elephant Panda?</h2>
+                <p>Our firm is founded by partners that have known one another for nearly 40 years.  During that time they would refer to one another by the Elephant and Panda emojis.  We seek to partner with people who want to build enduring relationships.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact" class="page">
+        <div class="page-container">
+            <div class="content-section">
+                <h1>Contact Us</h1>
+                <p>We're always interested in discussing new investment opportunities and partnerships in the aerospace and defense sector. Please reach out to learn more about how we can work together.</p>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <strong>Email:</strong> info@elephantpandaholdings.com
+                    </div>
+                    <div class="contact-item">
+                        <strong>Phone:</strong> +1 (555) 123-4567
+                    </div>
+                    <div class="contact-item">
+                        <strong>Address:</strong> 1621 Central Ave, Cheyenne, WY 82001
+                    </div>
+                </div>
+                
+                <h2>Investment Inquiries</h2>
+                <p>For investment opportunities, please contact our deal team at: <strong>investments@elephantpandaholdings.com</strong></p>
+                
+                <h2>Portfolio Company Support</h2>
+                <p>Existing portfolio companies can reach our operations team at: <strong>operations@elephantpandaholdings.com</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showPage(pageName) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.classList.remove('active'));
+            
+            // Show selected page
+            document.getElementById(pageName).classList.add('active');
+            
+            // Update active nav link
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('data-page') === pageName) {
+                    link.classList.add('active');
+                }
+            });
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+    </script>
 </body>
 </html>
