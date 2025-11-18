@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="images/logo.svg" alt="Elephant Panda Holdings" width="300">
+  <img src="images/Elephant Panda Logo - High Resolution.png" alt="Elephant Panda Holdings" width="300">
 
   # Elephant Panda Holdings, LLC
 
