@@ -31,7 +31,7 @@ We acquire lower middle market aerospace and defense companies with the followin
 
 - **Company Profile:** Established businesses serving the defense industrial base, including prime contractors, subcontractors, component manufacturers, and mission-critical service providers
 - **Financial Profile:** Revenue of $10-50 million with strong EBITDA margins (typically 15%+ or clear path to margin improvement). Transaction sizes typically range from $5 million to $25 million
-- **Contract Base:** Companies with recurring revenue from DoD, DHS, NASA, or other government agencies, as well as prime defense contractors
+- **Contract Base:** Companies with recurring revenue from DOW (Department of War), DHS, NASA, or other government agencies, as well as prime defense contractors
 - **Transaction Types:** Majority and control acquisitions, management buyouts, founder transitions, and strategic recapitalizations
 
 ### Value Creation Strategy
@@ -41,7 +41,7 @@ We don't just acquire companies—we actively build them. Our value creation app
 - **Operational Excellence:** Implementation of best-in-class program management, cost controls, and quality systems
 - **Strategic Growth:** Execution of buy-and-build strategies to expand capabilities and geographic reach
 - **Contract Expansion:** Leveraging industry relationships to win new programs and pursue prime contractor opportunities
-- **Infrastructure Investment:** Strategic investments in talent, security clearances, cybersecurity, and regulatory compliance
+- **Infrastructure Investment:** Strategic investments in talent, security clearances, cybersecurity, CMMC compliance, and regulatory compliance
 
 ---
 
