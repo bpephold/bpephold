@@ -2,13 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="Elephant Panda Holdings, LLC - Investment firm specializing in lower middle market Aerospace & Defense companies">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>Elephant Panda Holdings, LLC</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-tap-highlight-color: rgba(74, 158, 255, 0.2);
         }
 
         body {
@@ -18,6 +27,8 @@
             min-height: 100vh;
             position: relative;
             overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
         /* Background image styling */
@@ -191,6 +202,16 @@
             margin-right: 0.5rem;
         }
 
+        .contact-item a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            color: #4a9eff;
+        }
+
         /* Hide pages by default */
         .page {
             display: none;
@@ -212,18 +233,83 @@
             }
         }
 
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1001;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background-color: #ffffff;
+            margin: 3px 0;
+            transition: all 0.3s ease;
+            border-radius: 3px;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(8px, 8px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+
         /* Mobile Responsive */
         @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
             .nav-container {
                 padding: 0 1rem;
             }
 
             .nav-links {
-                gap: 1rem;
+                position: fixed;
+                left: -100%;
+                top: 73px;
+                flex-direction: column;
+                background-color: rgba(0, 0, 0, 0.95);
+                backdrop-filter: blur(10px);
+                width: 100%;
+                text-align: center;
+                transition: left 0.3s ease;
+                padding: 2rem 0;
+                gap: 0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .nav-links li {
+                padding: 1rem 0;
+            }
+
+            .nav-links a {
+                display: block;
+                font-size: 1.3rem;
+                padding: 1rem;
+                min-height: 44px;
             }
 
             .content-section {
-                padding: 2rem;
+                padding: 1.5rem;
+                margin: 0 1rem;
+            }
+
+            .page-container {
+                padding: 6rem 1rem 2rem;
             }
 
             .company-name {
@@ -231,7 +317,63 @@
             }
 
             .tagline {
+                font-size: 1.1rem;
+                margin-bottom: 2rem;
+            }
+
+            .cta-button {
+                padding: 1rem 2rem;
+                font-size: 1rem;
+                min-height: 44px;
+                min-width: 200px;
+            }
+
+            .logo {
                 font-size: 1.2rem;
+            }
+
+            /* Better mobile background */
+            .background-container {
+                background-position: center center;
+                background-size: cover;
+                filter: brightness(0.4);
+            }
+
+            /* Improve content section headings on mobile */
+            .content-section h1 {
+                font-size: 2rem;
+            }
+
+            .content-section h2 {
+                font-size: 1.5rem;
+            }
+
+            .content-section p {
+                font-size: 1.1rem;
+            }
+
+            .contact-item {
+                font-size: 1rem;
+                flex-wrap: wrap;
+            }
+        }
+
+        /* Extra small devices */
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 1rem;
+            }
+
+            .company-name {
+                font-size: 1.8rem;
+            }
+
+            .content-section {
+                padding: 1.25rem;
+            }
+
+            .content-section h1 {
+                font-size: 1.75rem;
             }
         }
     </style>
@@ -244,10 +386,15 @@
     <nav>
         <div class="nav-container">
             <a href="#" class="logo" onclick="showPage('home')">Elephant Panda Holdings</a>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul class="nav-links">
-                <li><a href="#" class="nav-link active" data-page="home" onclick="showPage('home')">Home</a></li>
-                <li><a href="#" class="nav-link" data-page="about" onclick="showPage('about')">About</a></li>
-                <li><a href="#" class="nav-link" data-page="contact" onclick="showPage('contact')">Contact</a></li>
+                <li><a href="#" class="nav-link active" data-page="home" onclick="showPage('home'); closeMenu()">Home</a></li>
+                <li><a href="#" class="nav-link" data-page="about" onclick="showPage('about'); closeMenu()">About</a></li>
+                <li><a href="#" class="nav-link" data-page="contact" onclick="showPage('contact'); closeMenu()">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -291,21 +438,21 @@
                 
                 <div class="contact-info">
                     <div class="contact-item">
-                        <strong>Email:</strong> info@ephold.com
+                        <strong>Email:</strong> <a href="mailto:info@ephold.com">info@ephold.com</a>
                     </div>
                     <div class="contact-item">
-                        <strong>Phone:</strong> +1 (202) 788-5515
+                        <strong>Phone:</strong> <a href="tel:+12027885515">+1 (202) 788-5515</a>
                     </div>
                     <div class="contact-item">
                         <strong>Address:</strong> 1621 Central Ave, Cheyenne, WY 82001
                     </div>
                 </div>
-                
+
                 <h2>Investment Inquiries</h2>
-                <p>For investment opportunities, please contact our deal team at: <strong>investments@ephold.com</strong></p>
-                
+                <p>For investment opportunities, please contact our deal team at: <a href="mailto:investments@ephold.com"><strong>investments@ephold.com</strong></a></p>
+
                 <h2>Portfolio Company Support</h2>
-                <p>Existing portfolio companies can reach our operations team at: <strong>operations@ephold.com</strong></p>
+                <p>Existing portfolio companies can reach our operations team at: <a href="mailto:operations@ephold.com"><strong>operations@ephold.com</strong></a></p>
             </div>
         </div>
     </div>
@@ -315,10 +462,10 @@
             // Hide all pages
             const pages = document.querySelectorAll('.page');
             pages.forEach(page => page.classList.remove('active'));
-            
+
             // Show selected page
             document.getElementById(pageName).classList.add('active');
-            
+
             // Update active nav link
             const navLinks = document.querySelectorAll('.nav-link');
             navLinks.forEach(link => {
@@ -327,10 +474,35 @@
                     link.classList.add('active');
                 }
             });
-            
+
             // Scroll to top
             window.scrollTo(0, 0);
         }
+
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            const hamburger = document.querySelector('.hamburger');
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+
+        function closeMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            const hamburger = document.querySelector('.hamburger');
+            navLinks.classList.remove('active');
+            hamburger.classList.remove('active');
+        }
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const navLinks = document.querySelector('.nav-links');
+            const hamburger = document.querySelector('.hamburger');
+            const nav = document.querySelector('nav');
+
+            if (!nav.contains(event.target) && navLinks.classList.contains('active')) {
+                closeMenu();
+            }
+        });
     </script>
 </body>
 </html>
