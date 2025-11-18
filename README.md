@@ -15,7 +15,7 @@
 
 Elephant Panda Holdings is a specialized acquisition firm focused on buying and building lower middle market aerospace and defense companies. Unlike financial buyers looking for quick exits, **we buy to hold and operate businesses indefinitely**. We pursue control acquisitions of established businesses, bringing deep operational expertise and industry relationships to drive growth and operational excellence.
 
-Founded by partners with over 40 years of combined experience in the aerospace and defense sector, we understand the unique challenges and opportunities facing A&D companies. Our hands-on approach combines strategic capital with active operational support to help our portfolio companies scale, win larger programs, and achieve sustainable growth.
+Founded by Bradford Powell, who brings nearly 25 years of aerospace and defense experience, Elephant Panda Holdings understands the unique challenges and opportunities facing A&D companies. Our hands-on approach combines strategic capital with active operational support to help our portfolio companies scale, win larger programs, and achieve sustainable growth.
 
 ### Our Holding Philosophy
 
@@ -45,7 +45,7 @@ We don't just acquire companies—we actively build them. Our value creation app
 
 ### Why Elephant Panda?
 
-Our firm is founded by partners who have known one another for nearly 40 years. During that time they would refer to one another by the Elephant and Panda emojis. We seek to build enduring relationships—with our portfolio companies, their employees, customers, and the communities they serve.
+The name Elephant Panda reflects our commitment to building enduring relationships. Both animals represent strength, wisdom, and a long-term perspective—values that guide how we work with our portfolio companies. We seek to build lasting partnerships with our portfolio companies, their employees, customers, and the communities they serve.
 
 ---
 
