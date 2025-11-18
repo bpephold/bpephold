@@ -68,15 +68,20 @@
         }
 
         .logo {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #ffffff;
+            display: flex;
+            align-items: center;
             text-decoration: none;
-            transition: color 0.3s ease;
+            transition: opacity 0.3s ease;
         }
 
         .logo:hover {
-            color: #4a9eff;
+            opacity: 0.8;
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+            object-fit: contain;
         }
 
         .nav-links {
@@ -328,8 +333,8 @@
                 min-width: 200px;
             }
 
-            .logo {
-                font-size: 1.2rem;
+            .logo img {
+                height: 40px;
             }
 
             /* Better mobile background */
@@ -360,8 +365,8 @@
 
         /* Extra small devices */
         @media (max-width: 480px) {
-            .logo {
-                font-size: 1rem;
+            .logo img {
+                height: 35px;
             }
 
             .company-name {
@@ -385,7 +390,9 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <a href="#" class="logo" onclick="showPage('home')">Elephant Panda Holdings</a>
+            <a href="#" class="logo" onclick="showPage('home')">
+                <img src="images/Elephant Panda Logo - Dark.png" alt="Elephant Panda Holdings">
+            </a>
             <div class="hamburger" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
