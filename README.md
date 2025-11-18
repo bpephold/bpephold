@@ -3,7 +3,7 @@
 
   # Elephant Panda Holdings, LLC
 
-  **Specialized Investment in Lower Middle Market Aerospace & Defense**
+  **Acquiring and Building Lower Middle Market Aerospace & Defense Companies**
 
   [![Website](https://img.shields.io/badge/Website-ephold.com-blue)](https://www.ephold.com)
 
@@ -13,19 +13,39 @@
 
 ## About Us
 
-Elephant Panda Holdings, LLC is a specialized investment firm focused on the lower middle market aerospace and defense sector. We combine strategic vision with operational expertise to help our portfolio companies reach their full potential.
+Elephant Panda Holdings is a specialized acquisition firm focused on buying and building lower middle market aerospace and defense companies. Unlike financial buyers looking for quick exits, **we buy to hold and operate businesses indefinitely**. We pursue control acquisitions of established businesses, bringing deep operational expertise and industry relationships to drive growth and operational excellence.
 
-### Our Mission
+Founded by partners with over 40 years of combined experience in the aerospace and defense sector, we understand the unique challenges and opportunities facing A&D companies. Our hands-on approach combines strategic capital with active operational support to help our portfolio companies scale, win larger programs, and achieve sustainable growth.
 
-We partner with exceptional aerospace and defense companies, providing not just capital but also strategic guidance and operational support. Our goal is to accelerate growth while maintaining the entrepreneurial spirit that makes these businesses successful.
+### Our Holding Philosophy
 
-### Investment Focus
+We are long-term holders, not short-term flippers. When we acquire a company, we're committed to its success for the long haul:
 
-We target lower middle market companies in the aerospace and defense industry with strong fundamentals and significant growth potential. Our target investment ranges from **$5 million to $25 million**, focusing on companies that can benefit from our industry expertise and strategic partnerships.
+- **Indefinite Hold Period:** We don't acquire businesses with predetermined exit timelines
+- **Employee Continuity:** We recognize that employees are the foundation of every business. We ensure smooth transitions, retain key talent, and invest in team development
+- **Operational Focus:** Our success is tied to long-term performance, not financial engineering or quick flips
+
+### Acquisition Criteria
+
+We acquire lower middle market aerospace and defense companies with the following characteristics:
+
+- **Company Profile:** Established businesses serving the defense industrial base, including prime contractors, subcontractors, component manufacturers, and mission-critical service providers
+- **Financial Profile:** Revenue of $10-50 million with strong EBITDA margins (typically 15%+ or clear path to margin improvement). Transaction sizes typically range from $5 million to $25 million
+- **Contract Base:** Companies with recurring revenue from DoD, DHS, NASA, or other government agencies, as well as prime defense contractors
+- **Transaction Types:** Majority and control acquisitions, management buyouts, founder transitions, and strategic recapitalizations
+
+### Value Creation Strategy
+
+We don't just acquire companies—we actively build them. Our value creation approach includes:
+
+- **Operational Excellence:** Implementation of best-in-class program management, cost controls, and quality systems
+- **Strategic Growth:** Execution of buy-and-build strategies to expand capabilities and geographic reach
+- **Contract Expansion:** Leveraging industry relationships to win new programs and pursue prime contractor opportunities
+- **Infrastructure Investment:** Strategic investments in talent, security clearances, cybersecurity, and regulatory compliance
 
 ### Why Elephant Panda?
 
-Our firm is founded by partners who have known one another for nearly 40 years. During that time they would refer to one another by the Elephant and Panda emojis. We seek to partner with people who want to build enduring relationships.
+Our firm is founded by partners who have known one another for nearly 40 years. During that time they would refer to one another by the Elephant and Panda emojis. We seek to build enduring relationships—with our portfolio companies, their employees, customers, and the communities they serve.
 
 ---
 
