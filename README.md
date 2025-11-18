@@ -43,10 +43,6 @@ We don't just acquire companies—we actively build them. Our value creation app
 - **Contract Expansion:** Leveraging industry relationships to win new programs and pursue prime contractor opportunities
 - **Infrastructure Investment:** Strategic investments in talent, security clearances, cybersecurity, and regulatory compliance
 
-### Why Elephant Panda?
-
-The name Elephant Panda reflects our commitment to building enduring relationships. Both animals represent strength, wisdom, and a long-term perspective—values that guide how we work with our portfolio companies. We seek to build lasting partnerships with our portfolio companies, their employees, customers, and the communities they serve.
-
 ---
 
 ## Website
