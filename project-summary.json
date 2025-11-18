@@ -1,0 +1,225 @@
+{
+  "project": {
+    "name": "Elephant Panda Holdings Website",
+    "url": "https://www.ephold.com",
+    "github_repo": "https://github.com/bpephold/bpephold",
+    "hosting": "GitHub Pages",
+    "domain": "ephold.com",
+    "cname": "ephold.com"
+  },
+  "company": {
+    "legal_name": "Elephant Panda Holdings, LLC",
+    "founder": {
+      "name": "Bradford Powell",
+      "linkedin": "https://www.linkedin.com/in/bradfordpowell/",
+      "experience": "Nearly 25 years of aerospace and defense experience"
+    },
+    "business_model": "Specialized acquisition firm focused on buying and building lower middle market aerospace and defense companies",
+    "positioning": "Buy-to-hold indefinitely (NOT private equity, NOT quick flip)",
+    "focus": "Control acquisitions of A&D companies",
+    "portfolio_companies": [
+      {
+        "name": "Chaos Industries",
+        "url": "https://www.chaosinc.com",
+        "status": "Recent investment (not yet advertised on website)"
+      }
+    ]
+  },
+  "contact_information": {
+    "general_email": "info@ephold.com",
+    "investments_email": "investments@ephold.com",
+    "operations_email": "operations@ephold.com",
+    "phone": "+1 (202) 788-5515",
+    "address": "1621 Central Ave, Cheyenne, WY 82001"
+  },
+  "acquisition_criteria": {
+    "company_profile": "Established businesses serving the defense industrial base, including prime contractors, subcontractors, component manufacturers, and mission-critical service providers",
+    "revenue_range": "$10-50 million",
+    "ebitda_margins": "15%+ or clear path to margin improvement",
+    "transaction_size": "$5-25 million",
+    "contract_base": "DOW (Department of War), DHS, NASA, other government agencies, prime defense contractors",
+    "transaction_types": [
+      "Majority and control acquisitions",
+      "Management buyouts",
+      "Founder transitions",
+      "Strategic recapitalizations"
+    ]
+  },
+  "value_creation_strategy": {
+    "operational_excellence": "Best-in-class program management, cost controls, quality systems",
+    "strategic_growth": "Buy-and-build strategies, complementary acquisitions",
+    "contract_expansion": "Win new programs, expand existing contracts, pursue prime opportunities",
+    "infrastructure_investment": "Talent, security clearances, cybersecurity, CMMC compliance, quality certifications, regulatory compliance"
+  },
+  "key_differentiators": {
+    "buy_to_hold": "We buy to hold and operate businesses indefinitely - not 3-5 year flips",
+    "employee_focus": "We recognize employees are the foundation. Ensure smooth transitions, retain key talent, invest in development",
+    "industry_expertise": "25 years A&D experience, deep understanding of cleared programs, government contracting, export controls",
+    "flexible_structures": "Tailored deals including earnouts, rollover equity, consulting arrangements",
+    "confidential_process": "All conversations strictly confidential"
+  },
+  "website_structure": {
+    "technology": "Static HTML/CSS/JavaScript",
+    "pages": [
+      {
+        "name": "Home",
+        "tagline": "We acquire and build lower middle market Aerospace & Defense companies",
+        "cta": "Learn More About Us"
+      },
+      {
+        "name": "About",
+        "sections": [
+          "About Us (founder info with LinkedIn link)",
+          "Our Holding Philosophy",
+          "Acquisition Criteria",
+          "Value Creation Strategy",
+          "For Business Owners"
+        ]
+      },
+      {
+        "name": "Contact",
+        "features": [
+          "Clickable email addresses (mailto links)",
+          "Clickable phone number (tel link)",
+          "Physical address",
+          "Investment inquiries email",
+          "Portfolio company support email"
+        ]
+      }
+    ],
+    "navigation": {
+      "type": "Fixed navbar with hamburger menu on mobile",
+      "logo": {
+        "file": "images/Elephant Panda Logo - High Resolution.png",
+        "desktop_height": "113px",
+        "mobile_tablet_height": "88px",
+        "small_phone_height": "75px"
+      }
+    }
+  },
+  "design_elements": {
+    "color_scheme": {
+      "primary_background": "#0a0a0a (dark)",
+      "primary_text": "#ffffff (white)",
+      "accent_color": "#4a9eff (blue)",
+      "background_image": "images/background.jpg with brightness(0.5) filter"
+    },
+    "typography": {
+      "font_family": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif",
+      "font_smoothing": "antialiased",
+      "responsive_sizing": "clamp() for fluid typography"
+    },
+    "mobile_optimization": {
+      "viewport": "width=device-width, initial-scale=1.0, maximum-scale=5.0",
+      "hamburger_menu": "Animated 3-line menu with slide-in navigation",
+      "touch_targets": "Minimum 44x44px for all interactive elements",
+      "breakpoints": [
+        "768px (tablet/mobile)",
+        "480px (small phones)"
+      ]
+    }
+  },
+  "key_decisions": {
+    "terminology": {
+      "avoid": "Private equity firm",
+      "use": "Specialized acquisition firm, buy-to-hold, control acquisitions"
+    },
+    "agency_nomenclature": {
+      "dod_now": "DOW (Department of War)",
+      "other_agencies": "DHS, NASA"
+    },
+    "removed_sections": [
+      "Why Elephant Panda? section (removed per client request)"
+    ],
+    "compliance_focus": "CMMC compliance added to infrastructure investment section"
+  },
+  "assets": {
+    "logo_files": [
+      "images/Elephant Panda Logo - High Resolution.png (current, 1.2MB)",
+      "images/Elephant Panda Logo - Dark.png (original)",
+      "images/logo.svg (created but replaced with PNG)"
+    ],
+    "background_image": "images/background.jpg (253KB)",
+    "readme_logo": "Uses high-resolution PNG at 300px width"
+  },
+  "github_setup": {
+    "authentication": "GitHub CLI (gh) installed and configured",
+    "commit_style": "Detailed, multi-line commit messages with bullet points",
+    "branch": "main",
+    "pages_deployment": "Automatic on push to main branch"
+  },
+  "completed_work": {
+    "phase_1_setup": [
+      "Cloned GitHub repository to local environment",
+      "Set up GitHub CLI authentication",
+      "Established git workflow"
+    ],
+    "phase_2_mobile_optimization": [
+      "Added responsive hamburger menu for mobile navigation",
+      "Implemented mobile-optimized meta tags",
+      "Enhanced touch target sizes (44x44px minimum)",
+      "Made contact information clickable (email and phone links)",
+      "Improved mobile typography and spacing",
+      "Added breakpoints for tablet (768px) and small phones (480px)",
+      "Optimized background image display for mobile"
+    ],
+    "phase_3_branding": [
+      "Added company logo to navbar",
+      "Replaced SVG with high-resolution PNG logo",
+      "Sized logo appropriately (113px desktop, 88px tablet, 75px phone)",
+      "Updated README with professional company profile"
+    ],
+    "phase_4_content_strategy": [
+      "Rewrote About page to tier 1 boutique acquisition firm standards",
+      "Repositioned from passive investment to active acquisition focus",
+      "Added detailed Acquisition Criteria section",
+      "Added Value Creation Strategy section",
+      "Added 'For Business Owners' section addressing sellers directly",
+      "Added 'Our Holding Philosophy' section emphasizing buy-to-hold",
+      "Updated homepage tagline to 'acquire and build' language",
+      "Added Bradford Powell founder information with LinkedIn link",
+      "Updated DOW (Department of War) nomenclature",
+      "Added CMMC compliance to infrastructure investment",
+      "Removed 'Why Elephant Panda?' section per request"
+    ]
+  },
+  "future_considerations": {
+    "portfolio_page": "Consider adding dedicated Portfolio page to showcase Chaos Industries and future investments",
+    "team_page": "Add Leadership/Team page with bios and A&D credentials",
+    "insights_section": "News/Insights section for thought leadership in A&D sector",
+    "case_studies": "Success stories from acquisitions (when available)",
+    "testimonials": "Testimonials from founders (when available)"
+  },
+  "session_metadata": {
+    "date": "2025-11-17 to 2025-11-18",
+    "total_commits": 13,
+    "files_modified": [
+      "index.html",
+      "README.md",
+      "images/Elephant Panda Logo - High Resolution.png",
+      "images/logo.svg"
+    ],
+    "git_commits": [
+      "Optimize website for mobile devices",
+      "Add company logo to navbar",
+      "Update README with professional company profile",
+      "Add high-resolution SVG logo",
+      "Replace SVG logo with high-resolution PNG logo",
+      "Increase logo size for better navbar balance",
+      "Rewrite About page with tier 1 acquisition firm standards",
+      "Update founder information to reflect accurate background",
+      "Remove 'Why Elephant Panda?' section and increase logo size",
+      "Add LinkedIn hyperlink to Bradford Powell name on About page",
+      "Update DoD to DOW and add CMMC compliance",
+      "Increase logo size by 25%"
+    ]
+  },
+  "important_notes": {
+    "linkedin_profile": "Bradford Powell's LinkedIn is linked on About page: https://www.linkedin.com/in/bradfordpowell/",
+    "positioning_key": "NOT private equity - specialized acquisition firm that buys to hold indefinitely",
+    "employee_commitment": "Strong emphasis on employee retention and smooth transitions",
+    "cmmc_compliance": "Important value-add for defense contractors",
+    "dow_nomenclature": "Use DOW (Department of War), not DoD",
+    "confidentiality": "All business owner conversations are strictly confidential"
+  }
+}
